@@ -180,3 +180,29 @@ figcaption {
   margin-top: 0.5rem;
   text-align: center;
 }
+/* --- Ajustes de márgenes y espacios --- */
+
+/* Para que todo el contenido se separe del borde izquierdo/derecho */
+main {
+  max-width: 960px;   /* ancho máximo para que no ocupe toda la pantalla */
+  margin: 2rem auto;  /* centra el contenido horizontalmente y da espacio arriba/abajo */
+  padding: 0 2rem;    /* separa el texto de los bordes izquierdo y derecho */
+}
+
+/* Para que los títulos no queden pegados */
+h2 {
+  margin-top: 3rem;   /* añade espacio arriba */
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+/* --- Centrar título del header --- */
+header {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
