@@ -140,22 +140,93 @@ select:focus {
 .skip-link:focus {
 	top: 6px;
 }
-/* --- Custom styles for resources.html --- */
+/* --- CSS del Resorurces html --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  background: #f7f9fc;
+  color: #333;
+}
+
+/* --- Header --- */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #007bff, #00b894);
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+/* --- Navegación --- */
+nav a {
+  margin: 0 0.5rem;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Main --- */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Secciones --- */
 section {
   margin-bottom: 3rem;
 }
 
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: #007bff;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+/* --- Artículos --- */
 article {
   background: #fff;
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 article h3 a {
-  color: #007bff;
+  color: #00b894;
   text-decoration: none;
 }
 
@@ -178,31 +249,49 @@ figcaption {
   font-size: 0.9rem;
   color: #666;
   margin-top: 0.5rem;
-  text-align: center;
-}
-/* --- Ajustes de márgenes y espacios --- */
-
-/* Para que todo el contenido se separe del borde izquierdo/derecho */
-main {
-  max-width: 960px;   /* ancho máximo para que no ocupe toda la pantalla */
-  margin: 2rem auto;  /* centra el contenido horizontalmente y da espacio arriba/abajo */
-  padding: 0 2rem;    /* separa el texto de los bordes izquierdo y derecho */
 }
 
-/* Para que los títulos no queden pegados */
-h2 {
-  margin-top: 3rem;   /* añade espacio arriba */
-  margin-bottom: 1.5rem;
+/* --- Iframes responsivos --- */
+iframe {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 8px;
+  min-height: 350px;
 }
 
-h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-/* --- Centrar título del header --- */
-header {
-  text-align: center;
-}
+/* --- Footer --- */
 footer {
   text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 3rem;
+}
+
+/* --- Botón Volver Arriba --- */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* oculto al inicio */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+#scrollTopBtn:hover {
+  background: #0056b3;
+  transform: scale(1.1);
 }

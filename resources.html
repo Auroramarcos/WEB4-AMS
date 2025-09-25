@@ -1,97 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recursos web</title>
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <header>
-    <h1>Aurora – WEB4º</h1>
-  </header>
-
-  <main>
-    <section id="ui-components">
-    <h2>UI Components</h2>
-
-	<article>
-      <h3>
-        <a href="https://getbootstrap.com/docs/5.3/examples/badges/">Bootstrap – Badges Example</a>
-      </h3>
-
-      <figure>
-        <img src="assets/img/img1.png" alt="Demo de Bootstrap Badges" width="640" height="360">
-        <figcaption>Screenshot "Badges" Bootstrap.</figcaption>
-      </figure>
-
-      <p><strong>Notes:</strong> The ones I liked the most are all in the last row, because in my opinion they have a very clean design and I like the way the vertical line separating them is added.</p>
-    </article>
-
-<article>
-      <h3>
-        <a href="https://getbootstrap.com/docs/5.3/examples/dropdowns/">Bootstrap – Dropdowns Example</a>
-      </h3>
-
-      <figure>
-        <img src="assets/img/img2.png" alt="Demo de Bootstrap Dropdowns" width="640" height="360">
-        <figcaption>Screenshot "Dropdowns" Bootstrap.</figcaption>
-      </figure>
-
-      <p><strong>Notes:</strong> Of all the ones there are, the one I like best is the one in the image. I like how the icons have been added to the side. It's very well integrated and also helps the user when navigating.</p>
-    </article>
-  </section>
-  
-  <section id="filters">
-    <h2>Filters</h2>
-	<article>
-      <h3>
-        <a href="https://tailwindcss.com/docs/filter-blur">TailwindCSS – Blur Example</a>
-      </h3>
-
-      <figure>
-        <img src="assets/img/img3.png" alt="Demo de TailwindCSS Blur" width="640" height="360">
-        <figcaption>Screenshot "Blur" TailwindCSS.</figcaption>
-      </figure>
-
-      <p><strong>Notes:</strong>I really like blur effects because you can play around with the layers. If we want to put text on top of an image, and it's not very legible, we can make the image behind it a little blurrier, which will make the text easier to read. </p>
-    </article>
-  </section>
-
-  <section id="interactivity">
-    <h2>Interactivity</h2>
-	<article>
-      <h3>
-        <a href="https://tailwindcss.com/docs/color-scheme">TailwindCSS – color-scheme Example</a>
-      </h3>
-
-      <figure>
-        <img src="assets/img/img4.png" alt="Demo de TailwindCSS color-scheme" width="640" height="360">
-        <figcaption>Screenshot "Color-scheme" TailwindCSS.</figcaption>
-      </figure>
-
-      <p><strong>Notes:</strong>I like it when users interacting with the page are given every possible facility to navigate it. Adding a calendar and also coloring the number they are selecting is a perfect idea to make it easier. </p>
-    </article>
-  </section>
-
-  <section id="effects">
-    <h2>Effects</h2>
-	<article>
-      <h3>
-        <a href="https://tailwindcss.com/docs/mask-composite">TailwindCSS – mask-composite Example</a>
-      </h3>
-
-      <figure>
-        <img src="assets/img/img5.png" alt="Demo de TailwindCSS mask-composite" width="640" height="360">
-        <figcaption>Screenshot "Mask-composite" TailwindCSS.</figcaption>
-      </figure>
-
-      <p><strong>Notes:</strong>I find this effect very interesting, which is why I added it. I think it adds originality and perfectly explains how image masks work. </p>
-    </article>
-  </section>
-  </main>
-  <footer>
-    <p>© 2025 – Aurora</p>
-  </footer>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Web Design Resources — Aurora</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+    <button id="scrollTopBtn" aria-label="Volver arriba">↑</button>
+<script src="assets/js/script.js"></script>
 </body>
+	</head>
+	<body>
+		<header>
+			<h1>Web Design Resources</h1>
+			<p>Aurora Marcos - Advanced Web Design</p>
+			<nav>
+				<a href="#frameworks">Frameworks</a>
+				·
+				<a href="#animations">Animations</a>
+				·
+				<a href="#templates">Templates</a>
+				·
+				<a href="#notes">Personal Notes</a>
+			</nav>
+		</header>
+
+		<main>
+			<section id="frameworks">
+				<h2>CSS Frameworks</h2>
+
+				<article>
+					<h3><a href="https://getbootstrap.com/">Bootstrap</a></h3>
+					<figure>
+						<img src="assets/img/bootstrap-demo.png" alt="Bootstrap demo" width="640" height="360" />
+						<figcaption>My screenshot of Bootstrap components</figcaption>
+					</figure>
+					<p>
+						<strong>Notes:</strong>
+						Quick prototyping with prebuilt components. Consider customizing theme to avoid “generic” look.
+					</p>
+					<iframe src="https://getbootstrap.com/" width="600" height="400" loading="lazy"></iframe>
+				</article>
+
+				<article>
+					<h3><a href="https://tailwindcss.com/">TailwindCSS</a></h3>
+					<figure>
+						<img src="assets/img/tailwind-demo.png" alt="Tailwind demo" width="640" height="360" />
+						<figcaption>Utility-first classes — my experiment</figcaption>
+					</figure>
+					<p>
+						<strong>Notes:</strong>
+						Fast to iterate; watch class bloat. Extract components for readability.
+					</p>
+					<iframe src="https://tailwindcss.com/" width="600" height="400" loading="lazy"></iframe>
+				</article>
+			</section>
+
+			<section id="animations">
+				<h2>Animation Libraries</h2>
+
+				<article>
+					<h3><a href="https://greensock.com/gsap/">GSAP</a></h3>
+					<figure>
+						<img src="assets/img/gsap-demo.png" alt="GSAP demo" width="640" height="360" />
+						<figcaption>Timeline and scroll experiments</figcaption>
+					</figure>
+					<p>
+						<strong>Notes:</strong>
+						Powerful for storytelling; mind performance and reduced motion preferences.
+					</p>
+					<iframe src="https://greensock.com/gsap/" width="600" height="400" loading="lazy"></iframe>
+				</article>
+			</section>
+
+			<section id="templates">
+				<h2>Templates & UI Kits</h2>
+
+				<article>
+					<h3><a href="https://html5up.net/">HTML5 UP</a></h3>
+					<figure>
+						<img src="assets/img/html5up-demo.png" alt="HTML5 UP demo" width="640" height="360" />
+						<figcaption>Template I’m considering to adapt</figcaption>
+					</figure>
+					<p>
+						<strong>Notes:</strong>
+						Good starting point; verify accessibility and semantics.
+					</p>
+					<iframe src="https://html5up.net/" width="600" height="400" loading="lazy"></iframe>
+				</article>
+			</section>
+
+			<section id="notes">
+				<h2>Personal Notes</h2>
+				<p>
+					Which tools fit my portfolio and why? What trade-offs did I find? What’s my plan to integrate one in my project
+					next week?
+				</p>
+			</section>
+		</main>
+
+		<footer>
+			<p>© 2025 — Web Atelier · All external links belong to their respective owners.</p>
+		</footer>
+	</body>
 </html>
