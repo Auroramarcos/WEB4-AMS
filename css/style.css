@@ -140,3 +140,41 @@ select:focus {
 .skip-link:focus {
 	top: 6px;
 }
+
+/* --- Tabla en la sección de notas --- */
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.portfolio-table thead {
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.portfolio-table tbody tr:hover {
+  background: #f5f9ff;
+}
+
+.portfolio-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+
+
+
