@@ -1,0 +1,71 @@
+/* --- Tabla en la sección de notas --- */
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.portfolio-table thead {
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.portfolio-table tbody tr:hover {
+  background: #f5f9ff;
+}
+
+.portfolio-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* --- BADGES --- */
+.badges {
+  margin: 0.5rem 0 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Tipos de badge */
+.badge.node {
+  background-color: #3c873a;      /* Verde Node.js */
+}
+
+.badge.ruby {
+  background-color: #cc342d;      /* Rojo Ruby */
+}
+
+.badge.cdn {
+  background-color: #007bff;      /* Azul para CDN */
+}
+
+.badge.saas {
+  background-color: #6f42c1;      /* Violeta SaaS */
+}
+
+.badge.standalone {
+  background-color: #17a2b8;      /* Turquesa Standalone */
+}
