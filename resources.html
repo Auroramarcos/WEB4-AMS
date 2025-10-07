@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Web Design Resources — Aurora</title>
 		<link rel="stylesheet" href="assets/css/style.css" />
-		<link rel="stylesheet" href="assets/css/resources.css">
+		<link rel="stylesheet" href="css/resources.css">
 
 	</head>
 	<body>
@@ -20,6 +20,10 @@
 				·
 				<a href="#templates">Templates & UI Kits</a>
 				·
+				<a href="#generators">Generators</a>
+				·
+				<a href="#cloud">Cloud Tools</a>
+				·
 				<a href="#notes">Personal Notes</a>
 			</nav>
 		</header>
@@ -30,10 +34,8 @@
 
 				<article>
 					<h3><a href="https://getbootstrap.com/">Bootstrap</a></h3>
-					  <div class="badges">
-						<span class="badge node">Requires Node.js</span>
-						<span class="badge cdn">CDN Available</span>
-					</div>
+					  <span class="badge badge-node">Requires Node.js</span>
+					  <span class="badge badge-cdn">CDN Available</span>
 					<figure>
 						<img src="assets/img/img1.png" alt="Bootstrap demo" width="640" height="360" />
 						<figcaption>BADGES</figcaption>
@@ -47,7 +49,7 @@
 
 				<article>
 					<h3><a href="https://tailwindcss.com/">TailwindCSS</a></h3>
-					<span class="badge badge-node">Node.js</span>
+					<span class="badge badge-node">Requires Node.js</span>
 					<figure>
 						<img src="assets/img/img2.png" alt="Tailwind demo" width="640" height="360" />
 						<figcaption>CURSOR</figcaption>
@@ -65,9 +67,7 @@
 
 				<article>
 					<h3><a href="https://greensock.com/gsap/">GSAP</a></h3>
-					<div class="badges">
-						<span class="badge cdn">CDN</span>
-					</div>
+					<span class="badge badge-cdn">CDN Available</span>
 
 					<figure>
 						<img src="assets/img/img3.png" alt="GSAP demo" width="640" height="360" />
@@ -76,15 +76,15 @@
 					<p>
 						<strong>Notes:</strong>
 						In my opinion this tool is very useful because I wanted to do something similar in my personal portfolio: a smooth transition between elements that looked fluid and seamless.
-At the time, I didn't achieve a completely satisfactory result; the animations weren't entirely smooth and there were small flickering glitches.
-That's why this tool is useful to me: it works well, looks clean, and is fluid.
-I will most likely use it as the basis for my next project, adapting it to my style, as it offers just the transition quality I was looking for.
+						At the time, I didn't achieve a completely satisfactory result; the animations weren't entirely smooth and there were small flickering glitches.
+						That's why this tool is useful to me: it works well, looks clean, and is fluid.
+						I will most likely use it as the basis for my next project, adapting it to my style, as it offers just the transition quality I was looking for.
 					</p>
 					<iframe src="https://codepen.io/cassie-codes/pen/vYWvwXV" width="600" height="400" loading="lazy"></iframe>
 				</article>
 				<article>
 					<h3><a href="https://greensock.com/gsap/">GSAP</a></h3>
-					<span class="badge badge-nonode">No Node.js</span>
+					<span class="badge badge-node">Requires Node.js</span>
 					<figure>
 						<img src="assets/img/img4.png" alt="GSAP demo" width="640" height="360" />
 						<figcaption>MORPHING</figcaption>
@@ -92,7 +92,7 @@ I will most likely use it as the basis for my next project, adapting it to my st
 					<p>
 						<strong>Notes:</strong>
 						I find this animation very interesting and creative, as it transforms the play icon into pause (and vice versa) with a fluid and elegant effect.
-Although I probably wouldn't use it in my projects with the play/pause symbol specifically, because my designs usually require other types of icons or interactions, I find the animation itself very interesting. I think the approach and technique in this example could serve as inspiration for other interactive elements in my future projects.
+						Although I probably wouldn't use it in my projects with the play/pause symbol specifically, because my designs usually require other types of icons or interactions, I find the animation itself very interesting. I think the approach and technique in this example could serve as inspiration for other interactive elements in my future projects.
 					</p>
 					<iframe src="https://codepen.io/osmosupply/pen/yyyzMee" width="600" height="400" loading="lazy"></iframe>
 				</article>
@@ -103,7 +103,7 @@ Although I probably wouldn't use it in my projects with the play/pause symbol sp
 
 				<article>
 					<h3><a href="https://html5up.net/">HTML5 UP</a></h3>
-					<span class="badge badge-nonode">No Node.js</span>
+					<span class="badge badge-node">Requires Node.js</span>
 					<figure>
 						<img src="assets/img/img5.png" alt="HTML5 UP demo" width="640" height="360" />
 						<figcaption>PARALLELISM</figcaption>
@@ -121,9 +121,7 @@ Although I probably wouldn't use it in my projects with the play/pause symbol sp
 
 				<article>
 					<h3><a href="https://jekyllrb.com">JEKYLL</a></h3>
-					<div class="badges">
-						<span class="badge ruby">Requires Ruby</span>
-					</div>
+					<span class="badge badge-ruby">Requires Ruby</span>
 
 					
 					<figure>
@@ -135,8 +133,47 @@ Although I probably wouldn't use it in my projects with the play/pause symbol sp
 						I’ve noticed that many blogs use this tool because it helps websites load fast and is easy to host for free on GitHub Pages. However, in my opinion, this feels too technical for me, so I don’t plan to use it for now. 
 					</p>
 				</article>
-			</section>
+				<article>
+					<h3><a href="https://gohugo.io/">HUGO</a></h3>
+					<span class="badge badge-standalone">Standalone Binary</span>
 
+					
+					<figure>
+						<img src="assets/img/img7.png" alt="HUGO demo" width="640" height="360" />
+						<figcaption>FAST STATIC SITE GENERATOR</figcaption>
+					</figure>
+					<p>
+						<strong>Notes:</strong>
+						While browsing, I discovered that Hugo offers a wide variety of free, open-source templates designed especially for portfolios. 
+						This is very useful to me because I can choose a theme that already has a clean design and customize it without having to start from scratch. 
+						I've taken several screenshots of my favorite templates to show various styles, from minimalist single-page portfolios 
+						to gallery-style grid designs. 
+					</p>
+					<figure class="hugo-gallery-grid">
+						<img src="assets/img/hugo1.png" alt="Tema de portfolio de Hugo 1">
+						<img src="assets/img/hugo2.png" alt="Tema de portfolio de Hugo 2">
+						<img src="assets/img/hugo3.png" alt="Tema de portfolio de Hugo 3">
+						<figcaption>Some Examples</figcaption>
+					</figure>
+
+				</article>
+			</section>
+		<section id="cloud">
+				<h2>Cloud Tools</h2>
+
+				<article>
+					<h3><a href="https://webflow.com/">Webflow</a></h3>
+					<span class="badge badge-saas">SaaS</span>
+					<figure>
+						<img src="assets/img/img8.png" alt="HTML5 UP demo" width="640" height="360" />
+						<figcaption>Webflow Designer Interface</figcaption>
+					</figure>
+					<p>
+						<strong>Notes:</strong>
+						I didn't know about this page, and I found it very interesting and, above all, useful, since it allows you to create responsive websites without writing code, which is a pretty big advantage. I think this could be very useful for my final project, and I will definitely use this tool.
+					</p>
+				</article>
+			</section>
 			<section id="notes">
 				<h2>Personal Notes</h2>
 				
@@ -154,25 +191,46 @@ Although I probably wouldn't use it in my projects with the play/pause symbol sp
     <tr>
       <td>Bootstrap – Badges</td>
       <td>✅ Yes</td>
-      <td>I think he hates adapting it to my portfolio, and as I said before, I've already used it on occasion.</td>
+      <td>I've used it occasionally, and it adapts well to my portfolio style.</td>
     </tr>
     <tr>
       <td>Tailwind – Cursor utilities</td>
       <td>✅ Yes</td>
-      <td>I think I could add it to the form.</td>
+      <td>Useful for enhancing UX with cursor interactions in forms and components.</td>
     </tr>
     <tr>
-      <td>GSPA – Swipe</td>
+      <td>GSAP – Swipe</td>
       <td>✅ Yes</td>
-      <td>As I said before, I would like to learn how to add it to my portfolio.</td>
+      <td>Perfect for smooth transitions; I'd like to integrate it into my portfolio.</td>
     </tr>
     <tr>
-      <td>GSPA – Animated <Button></Button></td>
+      <td>GSAP – Morphing</td>
       <td>❌ No</td>
-      <td>It's not my favorite tool for my portfolio, but I might add it if I adapt it to my style.</td>
+      <td>Interesting animation, but not my preferred choice for my portfolio.</td>
+    </tr>
+    <tr>
+      <td>HTML5 UP – Parallelism</td>
+      <td>✅ Yes</td>
+      <td>Provides ready-made layouts; good starting point for portfolio sections.</td>
+    </tr>
+    <tr>
+      <td>Jekyll</td>
+      <td>❌ No</td>
+      <td>Too technical for now, though fast and optimized for static sites.</td>
+    </tr>
+    <tr>
+      <td>Hugo</td>
+      <td>✅ Yes</td>
+      <td>Lightweight, fast, and flexible; I like the variety of portfolio templates.</td>
+    </tr>
+    <tr>
+      <td>Webflow</td>
+      <td>✅ Yes</td>
+      <td>Great SaaS tool; visual editor allows full control without coding.</td>
     </tr>
   </tbody>
 </table>
+
 			</section>
 		</main>
 

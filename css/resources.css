@@ -31,41 +31,77 @@
   border-bottom: none;
 }
 
-/* --- BADGES --- */
-.badges {
-  margin: 0.5rem 0 1rem;
-  display: flex;
-  gap: 0.5rem;
-}
-
 .badge {
   display: inline-block;
-  padding: 0.25rem 0.6rem;
-  font-size: 0.75rem;
+  padding: 0.25em 0.6em;
+  margin: 0.2em;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: #fff;
-  border-radius: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  border-radius: 0.5em;
+  color: white;
 }
 
-/* Tipos de badge */
-.badge.node {
-  background-color: #3c873a;      /* Verde Node.js */
+.badge-node {
+  background-color: #5baf4b; /* verde Node.js */
 }
 
-.badge.ruby {
-  background-color: #cc342d;      /* Rojo Ruby */
+.badge-nonode {
+  background-color: #6c757d; /* gris */
 }
 
-.badge.cdn {
-  background-color: #007bff;      /* Azul para CDN */
+.badge-cdn {
+  background-color: #0d6efd; /* azul Bootstrap/CDN */
 }
 
-.badge.saas {
-  background-color: #6f42c1;      /* Violeta SaaS */
+.badge-ruby {
+  background-color: #cc342d; /* rojo Ruby */
 }
 
-.badge.standalone {
-  background-color: #17a2b8;      /* Turquesa Standalone */
+.badge-standalone {
+  background-color: #ff9800; /* naranja Hugo */
 }
+
+.badge-saas {
+  background-color: #673ab7; /* púrpura SaaS */
+}
+
+.badge:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+
+.hugo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;   /* espacio entre columnas (las 2 de arriba) */
+  row-gap: 1.8rem;    /* espacio vertical entre filas (fila de arriba y de abajo) */
+  justify-items: center;
+  padding-top: 1.5rem;
+}
+
+
+.hugo-gallery-grid img {
+  width: 100%;
+  max-width: 320px;         /* tamaño consistente */
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* La tercera imagen ocupa toda la segunda fila */
+.hugo-gallery-grid img:nth-child(3) {
+  grid-column: 1 / span 2;
+}
+
+.hugo-gallery-grid figcaption {
+  grid-column: 1 / -1;      /* el pie de foto ocupa todo el ancho */
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;       /* espacio entre imágenes y figcaption */
+  color: #555;
+}
+
+
