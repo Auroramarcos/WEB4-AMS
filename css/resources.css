@@ -104,4 +104,8 @@
   color: #555;
 }
 
+.portfolio-table {
+  margin-bottom: 3rem; /* espacio extra debajo de la tabla */
+}
+
 
