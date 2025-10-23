@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado opcional -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Tu Nombre</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sección Sobre mí -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <h2>Sobre mí</h2>
+    <p class="lead">Soy un desarrollador apasionado por crear experiencias digitales increíbles. Me encanta aprender nuevas tecnologías y construir proyectos que marquen la diferencia.</p>
+  </div>
+</section>
+
+<!-- Sección Proyectos con varias filas -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Proyectos</h2>
+
+    <!-- Primera fila -->
+    <div class="row g-4 mb-4">
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100">
+          <div class="card-body text-center"><h5 class="card-title">Proyecto 1</h5></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 2</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 3</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 4</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 5</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 6</h5></div></div>
+      </div>
+    </div>
+
+    <!-- Segunda fila -->
+    <div class="row g-4 mb-4">
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 7</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 8</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 9</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 10</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 11</h5></div></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card h-100"><div class="card-body text-center"><h5 class="card-title">Proyecto 12</h5></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sección: Componente Reutilizable -->
+<section id="reusable" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Componente Reutilizable: Card de Proyecto</h2>
+
+    <p class="text-center mb-5">
+      Este componente de <strong>card</strong> reutiliza el patrón de diseño de Bootstrap.  
+      Se puede aplicar para mostrar distintos tipos de contenido (proyectos, productos, artículos, etc.) 
+      cambiando solo el texto y la imagen.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+  <!-- Card reutilizable 1 -->
+  <div class="col-md-4">
+    <div class="card reusable-card h-100">
+      <img src="assets/img/Pro2.jpg" class="card-img-top" alt="Proyecto Reutilizable 1">
+      <div class="card-body text-center">
+        <h5 class="card-title">Versión 1 – Proyecto</h5>
+        <p class="card-text">Usando la misma estructura de card para mostrar un proyecto con descripción breve.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#proyectoModal1">
+          Ver más
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card reutilizable 2 -->
+  <div class="col-md-4">
+    <div class="card reusable-card h-100">
+      <img src="assets/img/Pro1.jpg" class="card-img-top" alt="Producto Reutilizable 2">
+      <div class="card-body text-center">
+        <h5 class="card-title">Versión 2 – Producto</h5>
+        <p class="card-text">La misma card usada para un producto, simplemente cambiando la información.</p>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#proyectoModal2">
+          Ver más
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card reutilizable 3 -->
+  <div class="col-md-4">
+    <div class="card reusable-card h-100">
+      <img src="assets/img/Pro3.jpg" class="card-img-top" alt="Artículo Reutilizable 3">
+      <div class="card-body text-center">
+        <h5 class="card-title">Versión 3 – Artículo</h5>
+        <p class="card-text">Otra variación de la misma card para un artículo de blog.</p>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#proyectoModal3">
+          Ver más
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Proyecto 1 -->
+<div class="modal fade" id="proyectoModal1" tabindex="-1" aria-labelledby="proyectoModal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proyectoModal1Label">Proyecto 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Descripción más detallada del Proyecto 1. Aquí podrías explicar las tecnologías utilizadas o el objetivo del proyecto.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal del Proyecto 2 -->
+<div class="modal fade" id="proyectoModal2" tabindex="-1" aria-labelledby="proyectoModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proyectoModal2Label">Detalles del Producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Aquí puedes describir el producto con más detalle, características, beneficios o tecnologías utilizadas.</p>
+        <ul>
+          <li>Bootstrap y CSS personalizado</li>
+          <li>Diseño responsive</li>
+          <li>Interactividad mínima</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal del Proyecto 3 -->
+<div class="modal fade" id="proyectoModal3" tabindex="-1" aria-labelledby="proyectoModal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proyectoModal3Label">Detalles del Artículo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Descripción más completa del artículo de blog. Aquí puedes incluir el resumen, temas tratados y tecnologías usadas.</p>
+        <ul>
+          <li>HTML semántico</li>
+          <li>CSS personalizado</li>
+          <li>Responsive design con Bootstrap</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Sección Snippets -->
+<section id="snippets" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Snippets de código</h2>
+    <div class="row g-4">
+      
+      <!-- Snippet 1 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Botón con animación</h5>
+            <p class="card-text">Un botón sencillo con efecto hover en CSS.</p>
+            <pre class="bg-dark text-light p-3 rounded"><code id="snippet1">button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}</code></pre>
+            <button class="btn btn-outline-primary btn-sm mt-2" onclick="copySnippet('snippet1')">Copiar código</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Snippet 2 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Script de alerta</h5>
+            <p class="card-text">Un simple script en JavaScript para mostrar una alerta.</p>
+            <pre class="bg-dark text-light p-3 rounded"><code id="snippet2">document.getElementById("miBoton").addEventListener("click", function() {
+  alert("¡Has hecho clic en el botón!");
+});</code></pre>
+            <button class="btn btn-outline-primary btn-sm mt-2" onclick="copySnippet('snippet2')">Copiar código</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Script para copiar -->
+<script>
+  function copySnippet(id) {
+    const code = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(code);
+    alert("Código copiado al portapapeles ✅");
+  }
+</script>
+
+<!-- Sección Contacto -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contacto</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Tu nombre completo">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  © 2025 Tu Nombre
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+

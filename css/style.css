@@ -142,6 +142,80 @@ select:focus {
 }
 
 
+/*PORTFOLIO CSS*/
+
+/* Personalizaciones generales */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Secciones */
+section h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Cards */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== SNIPPETS ===== */
+
+/* Fondo, bordes y tipografía del bloque de código */
+pre {
+  background-color: #212529; /* fondo oscuro tipo consola */
+  color: #f8f9fa; /* texto claro */
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-x: auto; /* para evitar que se desborde en móviles */
+}
+
+/* Cards de snippets */
+#snippets .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#snippets .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón copiar código */
+#snippets button {
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
+
+#snippets button:hover {
+  transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+/* Sección de componente reutilizable */
+.reusable-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reusable-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 
 
 
